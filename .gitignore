@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+.pnpm-store
+
+# Build outputs
+gen/
+src-tauri/gen/
+src-tauri/target/
+
+# Tauri
+src-tauri/target/release/*.deb
+src-tauri/target/release/*.rpm
+src-tauri/target/release/*.AppImage
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store

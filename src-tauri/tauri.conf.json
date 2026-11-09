@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schema.tauri.app/config/2.12.5",
+  "identifier": "com.aistudio.hollywood",
+  "productName": "AI Hollywood Studio",
+  "version": "0.1.0",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "gen/dist",
+    "beforeBuildCommand": "pnpm build"
+  },
+  "app": {
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "title": "AI Hollywood Studio",
+        "width": 1200,
+        "height": 800,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/icon.png"
+    ],
+    "resources": [],
+    "externalBin": [],
+    "copyright": "Copyright (c) 2024 AI Hollywood Studio",
+    "category": "DeveloperTool",
+    "shortDescription": "AI-powered filmmaking platform",
+    "longDescription": "AI Hollywood Studio - A local-first AI-powered film production studio for Windows.",
+    "linux": {
+      "deb": {
+        "depends": []
+      }
+    },
+    "macOS": {
+      "entitlements": null,
+      "exceptionDomain": "",
+      "frameworks": [],
+      "providerShortName": null,
+      "signingIdentity": null
+    },
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    }
+  },
+  "plugins": {}
+}
